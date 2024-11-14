@@ -1,0 +1,557 @@
+* {
+    font-family: "EB Garamond", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* tienda inicio */
+
+  /* header */
+  
+  .nav__responsive-ul {
+      display: none;
+  }
+  
+  .nav {
+      background-color: #2CB5A8;
+      padding: 0px;
+  }
+  
+  
+  
+  .nav__li {
+      display: inline-block;
+      padding: 9px;
+      color: #fff;
+  }
+  .nav__li:hover > a {
+      color: #bbb;
+  }
+  
+  .nav__li:hover {
+      color: #bbb;
+  }
+  
+  .nav__li a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .nav__li i {
+      width: 30px;
+      box-sizing: border-box;
+      text-align: right;
+      margin-right: 5px;
+  }
+  
+  .nav__responsive-buttom-container {
+      position: absolute;
+      width: 100%;
+      font-size: 25px;
+      background-color: #2CB5A8;
+      margin-top: -64px;
+      z-index: 100;
+  }
+  .nav__responsive-buttom {
+      padding: 6px 20px;
+      text-align: right;
+      width: 100%;
+      color: #bdbdbd;
+  }
+  
+  /* Main */
+  
+  .titulo{
+      margin-top: 300px;
+      padding: 20px;
+      background-color: #2CB5A8;
+      color: #bdbdbd;
+      border-radius: 6px;
+  }
+  
+  
+  .contenido{
+      text-align: center;
+      background-color: #2CB5A8;
+      background-image: url(../multimedia/electrodomestico.jpg);
+      padding: 200px;
+  }
+  
+  .contenedor-del-boton{
+      margin-top: 100px;
+      text-align: center;
+  }
+  
+  .contenedor-del-boton a{
+      background-color: #32a59a;
+      text-decoration: none;
+      color: #bdbdbd;
+      padding: 30px;
+      margin: 10px;
+      border-radius: 10%;
+      display: inline-block;
+  }
+  
+  /* Footer */
+  
+  footer{
+      background-color: #2CB5A8;
+      padding: 200px;
+      text-align: center;
+  }
+  .creator {
+      color: white;
+  
+  }
+  
+  .signosdepregunta {
+      color: white;
+  }
+  
+    /* @media */
+  
+  
+  @media only screen and (max-width: 1200px) {
+      .nav__ul {
+          display: none;
+      }
+      .nav{
+          height: 37px;
+          width: 100%;
+  
+      }
+  
+      .nav__responsive-ul {
+          display: block;
+          position: absolute;
+          width: 100%;
+          margin-top: 37px;
+          padding-top: 27px;
+          height: 37px;
+      }
+      .nav__li-container {
+          position: relative;
+          top: -1200px;
+          height: calc(100vh - 64px);
+          background-color: #32a59a;
+          transition: all 1s;
+          z-index: 1;
+          width: 75%;
+          padding-top: 27px;
+      }
+  
+      .nav__responsive-li {
+          width: 100%;
+          padding: 9px 20px;
+      }
+      .nav__responsive-li i {
+          box-sizing: border-box;
+          text-align: center;
+          margin-right: 5px;
+          width: 30px;
+          color: #fff;
+      }
+      .nav__responsive-li a {
+          color: #bdbdbd;
+          text-decoration: none;
+      }
+  
+      .nav__responsive-ul:hover > .nav__li-container{
+          top: -27px;
+      }
+  
+      .contenido{
+              text-align: center;
+              background-color: #32a59a;
+              background-image: url(../multimedia/electrodomestico.jpg);
+              padding: 10px;
+      }
+  
+      
+  }
+  
+    /* contacto */
+
+  
+    .body-contacto {
+        color: #5d6063;
+        background-color: #32a59a;
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 16px;
+      }
+      
+      /* Encabezado */
+      
+      .h1-contacto {
+        color: #fff;
+      }
+    
+      .form-header {
+        text-align: center;
+        background-color: #228a7e;
+        border-radius: 10px;
+        width: 80%;
+        margin: 10px auto;
+        padding: 50px;
+        border: 8px solid #bdbdbd;
+      }
+      
+      .form-header h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      
+      /*  Formulario */
+      
+      .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 6px;
+        justify-content: center;
+        width: 100%;
+        padding: 50px;
+        margin: 30px 0 40px 0;
+        box-shadow: 7px 13px 37px #454343;
+      }
+      /*  Campos del Formulario */
+    
+    .form-row {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      
+      .form-row input[type="text"],
+      .form-row input[type="email"],
+      .form-row input[type="password"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+      }
+      
+      .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+      }
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+    .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 6px;
+      
+      
+        padding: 10px 50px;
+        cursor: pointer;
+        
+      }
+      
+      .warnings{
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        color: #ff0000;
+        padding-top: 20px;
+      }
+    
+    
+      /* Para Pantallas de más de 700px  */
+      @media only screen and (min-width: 700px) {
+        .form-header {
+          padding: 50px;
+        }
+      
+        .form-row {
+          flex-direction: row;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+    
+        .form-row input[type="text"],
+        .form-row input[type="email"],
+          .form-row input[type="password"] {
+          width: 50%;
+          height: initial;
+        }
+    .form-row label {
+          text-align: center;
+          width: 120px;
+          margin-top: 7px;
+          padding-right: 20px;
+        }
+      }
+    
+    .form-row textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+        font-size: 14px;
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        min-height: 200px;
+        margin-bottom: 10px;
+        padding: 7px;
+        resize: none;
+      
+        width: 100%;
+      }
+    
+        .form-row textarea {
+          width: 250px;
+        }
+    
+          
+        .form-row button {
+          margin-top: 40px;
+    }
+  
+    /* catalogo */
+
+    .h1-catalogo {
+        color: #fff;
+    }
+    
+    .body-catalogo{
+        background-color: #228a7e;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-family: 'Lato';
+        color: #fff;
+    }
+    
+    .icon-cart{
+        width: 40px;
+        height: 40px;
+        stroke: #fff;
+    }
+    
+    .icon-cart:hover{
+        cursor: pointer;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+    
+    /* Header */
+    .header-catalogo{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0 40px 0;
+    }
+    
+    .container-icon{
+        position: relative;
+    }
+    
+    .count-products{
+        position: absolute;
+        top: 55%;
+        right: 0;
+    
+        background-color: #000;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    
+    #contador-productos{
+        font-size: 12px;
+    }
+    
+    .container-cart-products{
+        position: absolute;
+        top: 50px;
+        right: 0;
+    
+        background-color: #191919;
+        width: 400px;
+        z-index: 1;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+        border-radius: 10px;
+        border: solid #fff;
+        
+    }
+    
+    .cart-product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+    
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    
+    }
+    
+    .info-cart-product{
+        display: flex;
+        justify-content: space-between;
+        flex: 0.8;
+    }
+    
+    .titulo-producto-carrito{
+        font-size: 20px;
+    }
+    
+    .precio-producto-carrito{
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .cantidad-producto-carrito{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .icon-close{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .icon-close:hover{
+        stroke: red;
+        cursor: pointer;
+    }
+    
+    .cart-total{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+    
+    .cart-total h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .total-pagar{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .hidden-cart{
+        display: none;
+    }
+    
+    
+    
+    
+    /* Main */
+    .container-items{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        grid-template-rows: 600px;
+        gap: 20px;
+    }
+    
+    .item{
+        border-radius: 10px;
+    }
+    
+    .item:hover{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    }
+    
+    .item img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: all .5s;
+    }
+    
+    .item figure{
+        overflow: hidden;
+    }
+    
+    .item:hover img{
+        transform: scale(1.2);
+    }
+    
+    .info-product{
+        padding: 15px 30px;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .price{
+        font-size: 18px;
+        font-weight: 900;
+    }
+    
+    .info-product button{
+        border: none;
+        background: none;
+        background-color: #0e302c;
+        color: #fff;
+        padding: 15px 10px;
+        cursor: pointer;
+    }
+
+    /* reseñas */
+
+    .reviews-section {
+        padding: 20px;
+        background-color: #14524b;
+        border: solid #191919;
+      }
+      
+      .reviews-section h2 {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .review {
+        background-color: #191919;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .review p:first-child {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+      }
+      
+      .review p:last-child {
+        text-align: right;
+        font-style: italic;
+        color: #555;
+      }
